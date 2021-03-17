@@ -1,0 +1,293 @@
+<!-- <!-- <div class="divcontainer">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <p>Project Management System</p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="userprofile">User Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="clientrecord">Client Details</a>
+          </li>
+        
+            <input type="button" class="Logout" (click)="onLogout()" value="Logout" />   
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div>
+    <button type="button" class="Addclient" (click)="AddClient(emp)">Add Client</button>  
+  </div>
+   <p *ngIf="dataSaved" style="color:rgb(0, 128, 0);font-size:20px;font-weight:bold" Class="success" align="left">  
+    {{massage}}  
+  </p> 
+<div class="table-responsive">
+  <table class="table">
+         <thead>  
+             <tr>  
+               <th>Client Id</th>
+               <th>Client Name</th>  
+                 <th>Client Email</th>  
+                 <th>Client Skype</th>  
+                 <th>Server Detail</th>   
+                 <th>Edit/Delete</th>   
+             </tr>  
+         </thead>  
+         <tbody>  
+             <tr *ngFor="let emp of abc">  
+                 <td>{{emp._id}}</td>
+                 <td>{{emp.ClientName}}</td>  
+                 <td>{{emp.ClientEmail}}</td>  
+                 <td>{{emp.ClientSkype}}</td>  
+                 <td class="cell-breakWord">{{emp.ServerDetail}}</td>   
+                 <td>
+                  <button type="button" class="Edit" (click)="Editclient(emp)">Edit</button>  
+                  <button type="button" class="btn btn-danger mr-1" (click)="Deleteclient(emp)">Delete</button>  
+                 </td>
+              </tr>  
+         </tbody>  
+        </table>
+      </div>  
+    </div> 
+
+
+
+     -->
+     
+  <!-- <link rel="stylesheet" href="http://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- <head>
+    <body> -->
+        <!-- <input type="checkbox" id="sidebar-toogle">
+  <div class="sidebar">
+    <div class="sidebar-header">
+    <h3 class="brand">
+        <span class="ti-unlink"></span>
+      <span>Project Management System</span>
+    </h3>
+    <label for="sidebar-toogle" class="ti-menu-alt"></label>
+    <!-- <span class="ti-menu-alt"></span> -->
+  <!-- </div>
+  <div class="sidebar-menu">
+    <ul>
+      <li><a href="/dashboard">
+        <span class="ti-home"></span>
+        <span>Home</span>
+      </a>
+      </li>
+      <li><a href="/userprofile">
+        <span class="ti-user"></span>
+        <span>Profile</span>
+      </a>
+      </li>
+      <li><a href="/clientrecord">
+        <span class="ti-face-smile"></span>
+        <span>Clients</span>
+      </a>
+      </li>
+      <li><a href="/logout">
+        <span class="ti-sign-out-alt"></span>
+        <span>log-out</span>
+      </a></li>
+    </ul>
+  </div>
+  </div>
+  
+  <div class="main-content">
+    <header>
+      <div class="search-wrapper">
+        <span class="ti-search"></span>
+        <input type="search" placeholder="Search">
+      </div> --> 
+      <!-- <div class="social-icons">
+        <span class="ti-bell"></span>
+        <span class="ti-comment"></span>
+        <div></div>
+      </div> -->
+    <!-- </header>
+     <main >
+      <table class="table">
+        <thead>  
+            <tr>  
+              <th>Client Id</th>
+              <th>Client Name</th>  
+                <th>Client Email</th>  
+                <th>Client Skype</th>  
+                <th>Server Detail</th>   
+                <th>Edit/Delete</th>   
+            </tr>  
+        </thead>  
+        <tbody>  
+            <tr *ngFor="let emp of abc">  
+                <td>{{emp._id}}</td>
+                <td>{{emp.ClientName}}</td>  
+                <td>{{emp.ClientEmail}}</td>  
+                <td>{{emp.ClientSkype}}</td>  
+                <td class="cell-breakWord">{{emp.ServerDetail}}</td>   
+                <td>
+                 <button type="button" class="Edit" (click)="Editclient(emp)">Edit</button>  
+                 <button type="button" class="btn btn-danger mr-1" (click)="Deleteclient(emp)">Delete</button>  
+                </td>
+             </tr>  
+        </tbody>  
+       </table>
+    </main> 
+  </div>  -->
+  <!-- <app-my-nav>
+    <router-outlet></router-outlet>
+  </app-my-nav> -->
+ 
+    <!-- <app-dashboard></app-dashboard>   -->
+    <!-- <app-my-nav>  
+      </app-my-nav>   -->
+      <app-my-nav> 
+        <body>
+          <!-- <div class="container-fluid"> -->
+         
+        <!-- </div>  -->
+        <!-- <div class="container"> -->
+         
+          <!-- <div class="container-fluid">
+          <button type="button" class="AddClient" (click)="AddClient()">Add Client</button> 
+        </div> -->
+        <div class="container">
+          <h1>Client Details</h1>
+      </div>
+          <div class="container">
+            <button type="button" class="btn btn-primary" (click)="AddClient()">Add Client</button> 
+            <div class="card">
+        <div class="table-responsive">
+        <table class="table">
+          <thead>  
+              <tr>  
+                <th>Client Id</th>
+                <th>Client Name</th>  
+                  <th>Client Email</th>  
+                  <th>Client Skype</th>  
+                  <th>Server Detail</th>   
+                  <th>Edit/Delete</th>   
+              </tr>  
+          </thead>  
+          <tbody>  
+              <tr *ngFor="let emp of abc">  
+                  <td>{{emp._id}}</td>
+                  <td>{{emp.ClientName}}</td>  
+                  <td>{{emp.ClientEmail}}</td>  
+                  <td>{{emp.ClientSkype}}</td>  
+                  <td class="cell-breakWord">{{emp.ServerDetail}}</td>   
+                  <td>
+                    <button type="button" (click)="Editclient(emp)" class="btn btn-default btn-sm">
+                      <span class="glyphicon glyphicon-pencil"></span> edit 
+                    </button>
+                     <button type="button"  (click)="Deleteclient(emp)" class="btn btn-default btn-sm">
+                      <span class="glyphicon glyphicon-trash"></span> delete 
+                    </button>
+                   <!-- <button type="button"  class="Edit" (click)="Editclient(emp)">Edit</button>  
+                   <button type="button"  class="btn btn-danger mr-1" (click)="Deleteclient(emp)">Delete</button>   -->
+                  </td>
+               </tr>  
+          </tbody>  
+         </table> 
+        </div> 
+      </div>
+    </div>
+  <!-- </div> -->
+  </body>
+        <!-- <div class="grid-container">
+  <h1 class="mat-h1">Client Details</h1>
+<div class="container" *ngIf="StudentData.length > 0"> 
+   <div class="mat-elevation-z8"> 
+    <table mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="ClientName">
+        <th mat-header-cell *matHeaderCellDef> Client Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.ClientName}} </td>
+      </ng-container>
+      <ng-container matColumnDef="ClientEmail">
+        <th mat-header-cell *matHeaderCellDef> Client Email </th>
+        <td mat-cell *matCellDef="let element"> {{element.ClientEmail}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="ClientSkype">
+        <th mat-header-cell *matHeaderCellDef> Client Skype </th>
+        <td mat-cell *matCellDef="let element"> {{element.ClientSkype}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="ServerDetail">
+        <th mat-header-cell *matHeaderCellDef> ServerDetail </th>
+        <td mat-cell *matCellDef="let element"> {{element.ServerDetail}} </td>
+      </ng-container>
+     
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  </div>
+</div>
+  </div> -->
+
+<!--        
+        <mat-card-content>  
+          <table class="table">
+            <thead>  
+                <tr>  
+                  <th>Client Id</th>
+                  <th>Client Name</th>  
+                    <th>Client Email</th>  
+                    <th>Client Skype</th>  
+                    <th>Server Detail</th>   
+                    <th>Edit/Delete</th>   
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr *ngFor="let emp of abc">  
+                    <td>{{emp._id}}</td>
+                    <td>{{emp.ClientName}}</td>  
+                    <td>{{emp.ClientEmail}}</td>  
+                    <td>{{emp.ClientSkype}}</td>  
+                    <td class="cell-breakWord">{{emp.ServerDetail}}</td>   
+                    <td>
+                     <button type="button"  class="Edit" (click)="Editclient(emp)">Edit</button>  
+                     <button type="button"  class="btn btn-danger mr-1" (click)="Deleteclient(emp)">Delete</button>  
+                    </td>
+                 </tr>  
+            </tbody>  
+           </table> 
+        </mat-card-content>   -->
+   <!-- <div>
+    <button type="button" class="Addclient" (click)="AddClient()">Add Client</button>  
+  </div>
+    <div class="table-responsive">
+     <table class="table">
+           <thead>  
+               <tr>  
+                 <th>Client Id</th>
+                 <th>Client Name</th>  
+                   <th>Client Email</th>  
+                   <th>Client Skype</th>  
+                   <th>Server Detail</th>   
+                   <th>Edit/Delete</th>   
+               </tr>  
+           </thead>  
+           <tbody>  
+               <tr *ngFor="let emp of abc">  
+                   <td>{{emp._id}}</td>
+                   <td>{{emp.ClientName}}</td>  
+                   <td>{{emp.ClientEmail}}</td>  
+                   <td>{{emp.ClientSkype}}</td>  
+                   <td class="cell-breakWord">{{emp.ServerDetail}}</td>   
+                   <td>
+                    <button type="button"  class="Edit" (click)="Editclient(emp)">Edit</button>  
+                    <button type="button"  class="btn btn-danger mr-1" (click)="Deleteclient(emp)">Delete</button>  
+                   </td>
+                </tr>  
+           </tbody>  
+          </table> 
+        </div>  
+        -->
+      </app-my-nav>  
